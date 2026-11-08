@@ -1,0 +1,6 @@
+{
+  "name": "ShellGuard",
+  "description": "Linux and Bash command safety analyzer. Identify dangerous operations, inspect command scope, and view safer alternatives before running.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

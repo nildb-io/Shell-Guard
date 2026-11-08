@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #11141a;
+    color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* Custom Neumorphic Dark Shadow Utilities */
+.neu-flat {
+  background: #181c24;
+  box-shadow: 6px 6px 14px rgba(8, 10, 14, 0.75), -6px -6px 14px rgba(32, 38, 50, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.neu-convex {
+  background: linear-gradient(145deg, #1a1f28, #161920);
+  box-shadow: 5px 5px 12px rgba(8, 10, 14, 0.75), -5px -5px 12px rgba(32, 38, 50, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neu-inset {
+  background: #13171f;
+  box-shadow: inset 3px 3px 8px rgba(7, 9, 12, 0.85), inset -3px -3px 8px rgba(33, 39, 51, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.neu-btn {
+  background: #181c24;
+  box-shadow: 4px 4px 10px rgba(8, 10, 14, 0.7), -4px -4px 10px rgba(32, 38, 50, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-btn:hover {
+  background: #1c212b;
+  box-shadow: 6px 6px 14px rgba(8, 10, 14, 0.8), -6px -6px 14px rgba(36, 43, 56, 0.5);
+}
+
+.neu-btn:active {
+  background: #14171f;
+  box-shadow: inset 2px 2px 6px rgba(7, 9, 12, 0.85), inset -2px -2px 6px rgba(33, 39, 51, 0.35);
+  transform: translateY(1px);
+}
+
+/* Custom Scrollbar for Terminal and Lists */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11141a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232a36;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #323b4c;
+}
